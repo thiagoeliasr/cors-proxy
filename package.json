@@ -1,0 +1,18 @@
+{
+  "name": "cors-proxy",
+  "version": "1.0.0",
+  "description": "Simple API to fetch requests bypassing CORS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve:prod": "NODE_ENV=prod node app.js $*",
+    "serve:dev": "NODE_ENV=dev nodemon app.js $*"
+  },
+  "author": "Thiago Elias",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
