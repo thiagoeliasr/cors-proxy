@@ -1,10 +1,12 @@
 const express = require('express')
 const request = require('request')
+const cors = require('cors');
 const compression = require('compression')
 const app = express()
 let port = 3000
 
 app.use(express.json())
+app.use(cors())
 app.use(compression())
 
 if (process.argv.length > 2) {
